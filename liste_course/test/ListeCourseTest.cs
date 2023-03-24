@@ -1,4 +1,6 @@
-﻿using System;
+﻿using liste_course.model;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,120 @@ namespace liste_course.test
 {
     internal class ListeCourseTest
     {
+        public ListeCourseTest() { }
+
+        public bool TestListeCourse() 
+        {
+            TestAjouterCourse();
+            TestAjouterCourse_ProduitExiste();
+            TestSupprimerProduit();
+            TestAfficherListeProduit();
+            return false; 
+        }
+
+        public bool TestAjouterCourse()
+        {
+            // Arrange
+            Produit produit = new Produit(01,"Bananes", 1);
+            ListeCourse listeCourse = new ListeCourse("Ma liste");
+
+            // Act
+            bool result = listeCourse.AjouterCourse(2, produit);
+
+            // Test
+            if (result != true)
+            {
+                Console.WriteLine("L'ajout de course a échoué.");
+                return false;
+            }
+            if (listeCourse.GetNombreProduits() != 1)
+            {
+                Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
+                return false;
+            }
+            if (listeCourse.GetQuantiteProduit(produit) != 2)
+            {
+                Console.WriteLine("La quantité de produit dans la liste est incorrecte.");
+                return false;
+            }
+            return true;
+        }
+
+        public bool TestAjouterCourse_ProduitExiste()
+        {
+            // Arrange
+            Produit produit = new Produit(01, "Pommes", 2);
+            ListeCourse listeCourse = new ListeCourse("Ma liste");
+            listeCourse.AjouterCourse(2, produit);
+
+            // Act
+            bool result = listeCourse.AjouterCourse(3, produit);
+
+            // Test
+            if (result != true)
+            {
+                Console.WriteLine("L'ajout de course a échoué.");
+                return false;
+            }
+            if (listeCourse.GetNombreProduits() != 1)
+            {
+                Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
+                return false;
+            }
+            if (listeCourse.GetQuantiteProduit(produit) != 5)
+            {
+                Console.WriteLine("La quantité de produit dans la liste est incorrecte.");
+                return false;
+            }
+            return true;
+        }
+
+        public bool TestSupprimerProduit()
+        {
+            // Arrange
+            Produit produit1 = new Produit(01, "Café", 3);
+            Produit produit2 = new Produit(02, "Lait", 1);
+            ListeCourse listeCourse = new ListeCourse("Ma liste");
+            listeCourse.AjouterCourse(2, produit1);
+            listeCourse.AjouterCourse(1, produit2);
+
+            // Act
+            bool result = listeCourse.SupprimerProduit(produit1);
+
+            // Test
+            if (result != true)
+            {
+                Console.WriteLine("La suppression de produit a échoué.");
+                return false;
+            }
+            if (listeCourse.GetNombreProduits() != 1)
+            {
+                Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
+                return false;
+            }
+            if (listeCourse.GetListeProduits()[0] != produit2)
+            {
+                Console.WriteLine("Le produit restant dans la liste est incorrect.");
+                return false;
+            }
+            return true;
+        }
+
+        public void TestAfficherListeProduit()
+        {
+            // Arrange
+            Produit produit1 = new Produit(01, "Tomates", 1);
+            Produit produit2 = new Produit(02, "Fromage", 4);
+            ListeCourse listeCourse = new ListeCourse("Ma liste");
+            listeCourse.AjouterCourse(3, produit1);
+            listeCourse.AjouterCourse(1, produit2);
+
+            // Act
+            Console.WriteLine("Liste des produits :");
+            listeCourse.AfficherListeProduit();
+
+            // Test
+            // Vérification visuelle de l'affichage de la liste des produits dans la console
+        }
     }
 }

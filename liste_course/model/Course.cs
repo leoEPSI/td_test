@@ -26,5 +26,15 @@ namespace liste_course.model
         {
             return produit;
         }
+
+        public void setQuantite(int quantite)
+        {
+            this.quantite = quantite;
+        }
+
+        public void setProduit(Produit produit)
+        { 
+            this.produit = produit;
+        }
     }
 }

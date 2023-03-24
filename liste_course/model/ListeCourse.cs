@@ -19,17 +19,73 @@ namespace liste_course.model
 
         public void AfficherListeProduit()
         {
-            throw new NotImplementedException();
+            foreach (Course course in listeCourses)
+            {
+                Console.WriteLine("{0} x {1}", course.getQuantite(), course.getProduit().getNom());
+            }
         }
 
-        public bool AjouterCourse()
+        public bool AjouterCourse(int quantite, Produit produit)
         {
-            throw new NotImplementedException();
+            bool produitExiste = false;
+            foreach (Course course in listeCourses)
+            {
+                if (course.getProduit().Equals(produit))
+                {
+                    course.setQuantite(course.getQuantite() + quantite);
+                    produitExiste = true;
+                }
+            }
+
+            if (!produitExiste)
+            {
+                listeCourses.Add(new Course(quantite, produit));
+            }
+
+            return true;
         }
 
-        public bool SupprimerProduit()
+        public bool SupprimerProduit(Produit produit)
         {
-            throw new NotImplementedException();
+            foreach (Course course in listeCourses)
+            {
+                if (course.getProduit().Equals(produit))
+                {
+                    listeCourses.Remove(course);
+                    return true;
+                }
+            }
+
+            return false;
         }
+
+        public int GetNombreProduits()
+        {
+            return listeCourses.Count;
+        }
+
+        public int GetQuantiteProduit(Produit produit)
+        {
+            foreach (Course course in listeCourses)
+            {
+                if (course.getProduit().Equals(produit))
+                {
+                    return course.getQuantite();
+                }
+            }
+
+            return 0;
+        }
+
+        public List<Produit> GetListeProduits()
+        {
+            List<Produit> produits = new List<Produit>();
+            foreach (Course course in listeCourses)
+            {
+                produits.Add(course.getProduit());
+            }
+            return produits;
+        }
+
     }
 }

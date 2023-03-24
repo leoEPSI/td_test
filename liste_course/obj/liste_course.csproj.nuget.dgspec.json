@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\TP_test_2022\\liste_course\\liste_course.csproj": {}
+    "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\Nouveau dossier\\td_test\\liste_course\\liste_course.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\TP_test_2022\\liste_course\\liste_course.csproj": {
+    "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\Nouveau dossier\\td_test\\liste_course\\liste_course.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\TP_test_2022\\liste_course\\liste_course.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\Nouveau dossier\\td_test\\liste_course\\liste_course.csproj",
         "projectName": "liste_course",
-        "projectPath": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\TP_test_2022\\liste_course\\liste_course.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\Nouveau dossier\\td_test\\liste_course\\liste_course.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\TP_test_2022\\liste_course\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\EPSI\\tp_courses\\Nouveau dossier\\td_test\\liste_course\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

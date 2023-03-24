@@ -9,7 +9,7 @@ namespace liste_course.model
     internal interface ListeProduit
     {
         void AfficherListeProduit();
-        bool AjouterCourse();
-        bool SupprimerProduit();
+        bool AjouterCourse(int quantite, Produit produit);
+        bool SupprimerProduit(Produit produit);
     }
 }
