@@ -17,6 +17,11 @@ namespace liste_course.model
             this.listeCourses = new List<Course>();
         }
 
+        public List<Course> getListCourse()
+        {
+            return this.listeCourses;
+        }
+
         public void AfficherListeProduit()
         {
             foreach (Course course in listeCourses)
