@@ -14,11 +14,14 @@ namespace liste_course.test
 
         public bool TestListeCourse() 
         {
+            Console.WriteLine("Test d'une liste de course=======================");
             TestAjouterCourse();
             TestAjouterCourse_ProduitExiste();
             TestSupprimerProduit();
             TestAfficherListeProduit();
-            return false; 
+            Console.WriteLine("Test d'une liste de course : OK");
+            Console.WriteLine();
+            return true; 
         }
 
         public bool TestAjouterCourse()
@@ -36,15 +39,29 @@ namespace liste_course.test
                 Console.WriteLine("L'ajout de course a échoué.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     ajout de course OK");
+            }
+
             if (listeCourse.GetNombreProduits() != 1)
             {
                 Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     nombre de produits dans la liste OK");
+            }
+
             if (listeCourse.GetQuantiteProduit(produit) != 2)
             {
                 Console.WriteLine("La quantité de produit dans la liste est incorrecte.");
                 return false;
+            }
+            else
+            {
+                Console.WriteLine("     quantité de produit dans la liste OK");
             }
             return true;
         }
@@ -65,16 +82,31 @@ namespace liste_course.test
                 Console.WriteLine("L'ajout de course a échoué.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     ajout de course OK");
+            }
+
             if (listeCourse.GetNombreProduits() != 1)
             {
                 Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     nombre de produits dans la liste OK");
+            }
+
             if (listeCourse.GetQuantiteProduit(produit) != 5)
             {
                 Console.WriteLine("La quantité de produit dans la liste est incorrecte.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     quantité de produit dans la liste OK");
+            }
+
             return true;
         }
 
@@ -96,16 +128,31 @@ namespace liste_course.test
                 Console.WriteLine("La suppression de produit a échoué.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     suppression de produit OK");
+            }
+
             if (listeCourse.GetNombreProduits() != 1)
             {
                 Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     nombre de produits dans la liste OK");
+            }
+
             if (listeCourse.GetListeProduits()[0] != produit2)
             {
                 Console.WriteLine("Le produit restant dans la liste est incorrect.");
                 return false;
             }
+            else
+            {
+                Console.WriteLine("     produit restant dans la liste OK");
+            }
+
             return true;
         }
 
