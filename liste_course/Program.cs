@@ -11,15 +11,19 @@ namespace Course
 
             ProduitTest pT = new ProduitTest();
             pT.creerProduit();
+            Console.WriteLine();
 
             CourseTest cT = new CourseTest();
             cT.CreerCourse();
+            Console.WriteLine();
 
             ListeCourseTest lcT = new ListeCourseTest();
             lcT.TestListeCourse();
+            Console.WriteLine();
 
             CaddieTest caT = new CaddieTest();
             caT.TestCaddie();
+            Console.WriteLine();
 
             Console.WriteLine("fin");
 

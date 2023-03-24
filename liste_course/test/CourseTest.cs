@@ -29,7 +29,6 @@ namespace liste_course.test
             else Console.WriteLine("        L'id du produit est OK");
 
             Console.WriteLine("Création d'une course : OK");
-            Console.WriteLine();
 
             return true;
         }

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace liste_course.test
 {
+    using liste_course.model;
     internal class ListeCourseTest
     {
         public ListeCourseTest() { }
@@ -15,12 +16,11 @@ namespace liste_course.test
         public bool TestListeCourse() 
         {
             Console.WriteLine("Test d'une liste de course=======================");
-            TestAjouterCourse();
-            TestAjouterCourse_ProduitExiste();
-            TestSupprimerProduit();
+            if (!TestAjouterCourse()) return false;
+            if (!TestAjouterCourse_ProduitExiste()) return false;
+            if (!TestSupprimerProduit()) return false;
             TestAfficherListeProduit();
             Console.WriteLine("Test d'une liste de course : OK");
-            Console.WriteLine();
             return true; 
         }
 
@@ -31,7 +31,7 @@ namespace liste_course.test
             ListeCourse listeCourse = new ListeCourse("Ma liste");
 
             // Act
-            bool result = listeCourse.AjouterCourse(2, produit);
+            bool result = listeCourse.AjouterCourse(new Course(2, produit));
 
             // Test
             if (result != true)
@@ -71,10 +71,10 @@ namespace liste_course.test
             // Arrange
             Produit produit = new Produit(01, "Pommes", 2);
             ListeCourse listeCourse = new ListeCourse("Ma liste");
-            listeCourse.AjouterCourse(2, produit);
+            listeCourse.AjouterCourse(new Course(2, produit));
 
             // Act
-            bool result = listeCourse.AjouterCourse(3, produit);
+            bool result = listeCourse.AjouterCourse(new Course(3, produit));
 
             // Test
             if (result != true)
@@ -116,11 +116,11 @@ namespace liste_course.test
             Produit produit1 = new Produit(01, "Café", 3);
             Produit produit2 = new Produit(02, "Lait", 1);
             ListeCourse listeCourse = new ListeCourse("Ma liste");
-            listeCourse.AjouterCourse(2, produit1);
-            listeCourse.AjouterCourse(1, produit2);
+            listeCourse.AjouterCourse(new Course(2, produit1));
+            listeCourse.AjouterCourse(new Course(1, produit2));
 
             // Act
-            bool result = listeCourse.SupprimerProduit(produit1);
+            bool result = listeCourse.SupprimerProduit(new Course(2,produit1));
 
             // Test
             if (result != true)
@@ -162,8 +162,8 @@ namespace liste_course.test
             Produit produit1 = new Produit(01, "Tomates", 1);
             Produit produit2 = new Produit(02, "Fromage", 4);
             ListeCourse listeCourse = new ListeCourse("Ma liste");
-            listeCourse.AjouterCourse(3, produit1);
-            listeCourse.AjouterCourse(1, produit2);
+            listeCourse.AjouterCourse(new Course(3, produit1));
+            listeCourse.AjouterCourse(new Course(1, produit2));
 
             // Act
             Console.WriteLine("Liste des produits :");

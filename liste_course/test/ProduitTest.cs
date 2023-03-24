@@ -30,7 +30,6 @@ namespace liste_course.test
             else Console.WriteLine("        le prix du produit est OK");
 
             Console.WriteLine("Création de Produit : OK");
-            Console.WriteLine();
 
             return true;
         }

@@ -17,6 +17,11 @@ namespace liste_course.model
             this.listeCourses = new List<Course>();
         }
 
+        public List<Course> getListCourse()
+        {
+            return this.listeCourses;
+        }
+
         public void AfficherListeProduit()
         {
             foreach (Course course in listeCourses)
@@ -25,31 +30,31 @@ namespace liste_course.model
             }
         }
 
-        public bool AjouterCourse(int quantite, Produit produit)
+        public bool AjouterCourse(Course courseAdd)
         {
             bool produitExiste = false;
             foreach (Course course in listeCourses)
             {
-                if (course.getProduit().Equals(produit))
+                if (course.getProduit().Equals(courseAdd.getProduit()))
                 {
-                    course.setQuantite(course.getQuantite() + quantite);
+                    course.setQuantite(course.getQuantite() + courseAdd.getQuantite());
                     produitExiste = true;
                 }
             }
 
             if (!produitExiste)
             {
-                listeCourses.Add(new Course(quantite, produit));
+                listeCourses.Add(courseAdd);
             }
 
             return true;
         }
 
-        public bool SupprimerProduit(Produit produit)
+        public bool SupprimerProduit(Course courseSupp)
         {
             foreach (Course course in listeCourses)
             {
-                if (course.getProduit().Equals(produit))
+                if (course.getProduit().Equals(courseSupp.getProduit))
                 {
                     listeCourses.Remove(course);
                     return true;
