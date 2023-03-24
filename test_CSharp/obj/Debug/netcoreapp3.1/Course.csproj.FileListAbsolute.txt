@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.exe
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.deps.json
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.runtimeconfig.json
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.runtimeconfig.dev.json
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.dll
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\bin\Debug\netcoreapp3.1\Course.pdb
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.AssemblyInfo.cs
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.dll
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.pdb
+C:\Users\user\Desktop\EPSI\Methodologie Tests\Course\test_CSharp\obj\Debug\netcoreapp3.1\Course.genruntimeconfig.cache
