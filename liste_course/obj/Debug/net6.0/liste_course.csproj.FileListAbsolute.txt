@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.AssemblyInfo.cs
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\bin\Debug\net6.0\liste_course.exe
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\bin\Debug\net6.0\liste_course.deps.json
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\bin\Debug\net6.0\liste_course.runtimeconfig.json
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\bin\Debug\net6.0\liste_course.dll
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\bin\Debug\net6.0\liste_course.pdb
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.dll
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\refint\liste_course.dll
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.pdb
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\liste_course.genruntimeconfig.cache
+C:\Users\user\Desktop\EPSI\tp_courses\TP_test_2022\liste_course\obj\Debug\net6.0\ref\liste_course.dll
