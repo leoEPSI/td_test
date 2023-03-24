@@ -1,0 +1,5 @@
+C:\Users\jaded\PCI Dropbox\Jade DOMASVASSEROT\EPSI_COURS\B3\Cours\Atelier_industrialisation_test\ListeDeCourse\ListeDeCourse\obj\Debug\net6.0\ListeDeCourse.csproj.AssemblyReference.cache
+C:\Users\jaded\PCI Dropbox\Jade DOMASVASSEROT\EPSI_COURS\B3\Cours\Atelier_industrialisation_test\ListeDeCourse\ListeDeCourse\obj\Debug\net6.0\ListeDeCourse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaded\PCI Dropbox\Jade DOMASVASSEROT\EPSI_COURS\B3\Cours\Atelier_industrialisation_test\ListeDeCourse\ListeDeCourse\obj\Debug\net6.0\ListeDeCourse.AssemblyInfoInputs.cache
+C:\Users\jaded\PCI Dropbox\Jade DOMASVASSEROT\EPSI_COURS\B3\Cours\Atelier_industrialisation_test\ListeDeCourse\ListeDeCourse\obj\Debug\net6.0\ListeDeCourse.AssemblyInfo.cs
+C:\Users\jaded\PCI Dropbox\Jade DOMASVASSEROT\EPSI_COURS\B3\Cours\Atelier_industrialisation_test\ListeDeCourse\ListeDeCourse\obj\Debug\net6.0\ListeDeCourse.csproj.CoreCompileInputs.cache
