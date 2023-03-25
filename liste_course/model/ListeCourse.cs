@@ -54,7 +54,7 @@ namespace liste_course.model
         {
             foreach (Course course in listeCourses)
             {
-                if (course.getProduit().Equals(courseSupp.getProduit))
+                if (course.getProduit().Equals(courseSupp.getProduit()))
                 {
                     listeCourses.Remove(course);
                     return true;

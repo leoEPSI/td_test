@@ -34,17 +34,17 @@ namespace liste_course.model
 
         public bool AjouterCourse(Course course)
         {
-            AfficherListeProduit();
+            //AfficherListeProduit();
             this.listeCourses.Add(course);
-            this.listeCourseObjet.getListCourse().Remove(course);
+            this.listeCourseObjet.SupprimerProduit(course);
             return true;
         }
 
         public bool SupprimerProduit(Course course)
         {
-            AfficherListeProduit();
-            this.listeCourseObjet.getListCourse().Remove(course);
-            this.listeCourses.Add(course);
+            //AfficherListeProduit();
+            this.listeCourses.Remove(course);
+            this.listeCourseObjet.AjouterCourse(course);
             return true;
         }
 
@@ -74,6 +74,11 @@ namespace liste_course.model
                 produits.Add(course.getProduit());
             }
             return produits;
+        }
+
+        public ListeCourse getListeCourse()
+        {
+            return this.listeCourseObjet;
         }
 
     }

@@ -116,11 +116,13 @@ namespace liste_course.test
             Produit produit1 = new Produit(01, "Café", 3);
             Produit produit2 = new Produit(02, "Lait", 1);
             ListeCourse listeCourse = new ListeCourse("Ma liste");
-            listeCourse.AjouterCourse(new Course(2, produit1));
+            Course cTest = new Course(2, produit1);
+
+            listeCourse.AjouterCourse(cTest);
             listeCourse.AjouterCourse(new Course(1, produit2));
 
             // Act
-            bool result = listeCourse.SupprimerProduit(new Course(2,produit1));
+            bool result = listeCourse.SupprimerProduit(cTest);
 
             // Test
             if (result != true)

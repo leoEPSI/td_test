@@ -20,11 +20,11 @@ namespace Course
             ListeCourseTest lcT = new ListeCourseTest();
             lcT.TestListeCourse();
             Console.WriteLine();
-
+            
             CaddieTest caT = new CaddieTest();
             caT.TestCaddie();
             Console.WriteLine();
-
+            
             Console.WriteLine("fin");
 
         }

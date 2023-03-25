@@ -18,7 +18,6 @@ namespace liste_course.test
             
             if(! TestAjouterCourse()) return false;
             if(! TestSupprimerProduit()) return false;
-            if(! TestAfficherCaddie()) return false;
             
             Console.WriteLine("Test d'un caddie de course : OK");
             return true;
@@ -48,22 +47,32 @@ namespace liste_course.test
 
             if (caddie.GetNombreProduits() != 1)
             {
-                Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
+                Console.WriteLine("Le nombre de produits dans le caddie est incorrect.");
                 return false;
             }
             else
             {
-                Console.WriteLine("     nombre de produits dans la liste OK");
+                Console.WriteLine("     nombre de produits dans le caddie OK");
+            }
+
+            if(caddie.getListeCourse().GetNombreProduits() != 0 )
+            {
+                Console.WriteLine("Le nombre de produits dans la liste de course est incorrect.");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("     nombre de produits dans la liste de course OK");
             }
 
             if (caddie.GetQuantiteProduit(produit) != 2)
             {
-                Console.WriteLine("La quantité de produit dans la liste est incorrecte.");
+                Console.WriteLine("La quantité de produit dans le caddie est incorrecte.");
                 return false;
             }
             else
             {
-                Console.WriteLine("     quantité de produit dans la liste OK");
+                Console.WriteLine("     quantité de produit dans le caddie OK");
             }
 
 
@@ -81,11 +90,14 @@ namespace liste_course.test
             listeCours.AjouterCourse(new Course(1, produit2));
 
             Caddie caddie = new Caddie(listeCours);
-            caddie.AjouterCourse(new Course(2, produit1));
+
+            Course cTest = new Course(2, produit1);
+
+            caddie.AjouterCourse(cTest);
             caddie.AjouterCourse(new Course(1, produit2));
 
             // Act
-            bool result = caddie.SupprimerProduit(new Course(2, produit1));
+            bool result = caddie.SupprimerProduit(cTest);
 
             // Test
             if (result != true)
@@ -100,40 +112,34 @@ namespace liste_course.test
 
             if (caddie.GetNombreProduits() != 1)
             {
-                Console.WriteLine("Le nombre de produits dans la liste est incorrect.");
+                Console.WriteLine("Le nombre de produits dans le caddie est incorrect.");
                 return false;
             }
             else
             {
-                Console.WriteLine("     nombre de produits dans la liste OK");
+                Console.WriteLine("     nombre de produits dans le caddie OK");
+            }
+
+            if (caddie.getListeCourse().GetNombreProduits() != 1)
+            {
+                Console.WriteLine("Le nombre de produits dans la liste de course est incorrect.");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("     nombre de produits dans la liste de course OK");
             }
 
             if (caddie.GetListeProduits()[0] != produit2)
             {
-                Console.WriteLine("Le produit restant dans la liste est incorrect.");
+                Console.WriteLine("Le produit restant dans le caddie est incorrect.");
                 return false;
             }
             else
             {
-                Console.WriteLine("     produit restant dans la liste OK");
+                Console.WriteLine("     produit restant dans le caddie OK");
             }
 
-            return true;
-        }
-
-        public bool TestAfficherCaddie()
-        {
-            /*
-            Produit produit1 = new Produit(01, "Tomates", 1);
-            Produit produit2 = new Produit(02, "Fromage", 4);
-            Caddie caddie = new Caddie();
-            caddie.AjouterCourse(3, produit1);
-            caddie.AjouterCourse(1, produit2);
-
-            // Act
-            Console.WriteLine("Liste des produits :");
-            caddie.AfficherListeProduit();
-            */
             return true;
         }
     }
